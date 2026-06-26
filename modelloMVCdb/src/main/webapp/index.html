@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head><title>MVC Examples</title>
+<link rel="stylesheet"
+      href="./css/styles.css"
+      type="text/css"/>
+</head>
+<body>
+<table class="title">
+  <tr><th>MVC Examples</th></tr>
+</table>
+<br/>
+<fieldset>
+  <legend>Conto</legend>
+
+  <!-- the html page invokes the "show-balance" servlet, i.e., the ShowBalance class -->
+
+  <form action="show-balance">
+    Customer ID (1, 2, 3):
+    <input type="number" name="customerId"/><br/>
+    <input type="submit" value="Show Balance"/>
+  </form>
+</fieldset>
+
+<br/>
+
+<!-- 🟢 NUOVA FUNZIONALITÀ (TSW EXERCISE) -->
+<fieldset>
+    <legend>Add Customer</legend>
+
+    <form action="add-customer" method="post">
+        First Name:
+        <input type="text" name="firstName"/><br/>
+
+        Last Name:
+        <input type="text" name="lastName"/><br/>
+
+        Balance:
+        <input type="number" step="0.01" name="balance"/><br/>
+
+        <input type="submit" value="Add Customer"/>
+    </form>
+</fieldset>
+
+<br/>
+
+<fieldset>
+    <legend>Show All Customers</legend>
+
+    <a href="ShowAll">
+        View all customers
+    </a>
+</fieldset>
+</body></html>
